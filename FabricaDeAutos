@@ -1,0 +1,119 @@
+package ClaseDosPOO;
+
+public class Auto {
+	
+	
+	//Atributos
+	public String Patente;
+	public int cantRuedas;
+	public String color;
+	public String marca; 
+	public String modelo;
+	public boolean tieneAireAcondicionado;
+	public float cilindrada;
+	public double precio;
+	
+		
+	 //Getters
+    public String getPatente() {
+        return Patente;
+    }
+    public int getCantRuedas() {
+        return cantRuedas;
+    }
+    public String getColor() {
+        return color;
+    }
+    public String getMarca() {
+        return marca;
+    }
+    public String getModelo() {
+        return modelo;
+    }
+    public boolean getTieneAireAcondicionado() {
+        return tieneAireAcondicionado;
+    }
+    public float getCilindrada() {
+        return cilindrada;
+    }
+    public double getPrecio() {
+        return precio;
+    }
+
+    //Setters
+    public void setPatente(String Patente) {
+        this.Patente = Patente;
+    }
+    public void setCantRuedas(int cantRuedas) {
+        this.cantRuedas = cantRuedas;
+    }
+    public void setColor(String color) {
+        this.color = color;
+    }
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+    public void setTieneAireAcondicionado(boolean tieneAireAcondicionado) {
+        this.tieneAireAcondicionado = tieneAireAcondicionado;
+    }
+    public void setCilindrada(float cilindrada) {
+        this.cilindrada = cilindrada;
+    }
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+    
+    
+    //Metodos
+    public void encender() {
+        System.out.println("El auto se encendió");
+    }
+    public void frenar() {
+        System.out.println("El auto freno");
+    }
+    public void acelerar() {
+        System.out.println("El auto acelero");
+    }
+    public void doblarDerecha() {
+        System.out.println("El auto giro a la derecha");
+    }
+    public void doblarIzquierda() {
+        System.out.println("El auto giro a la izquierda");
+    }
+    
+    	public static void main(String[] args) {
+		
+			//Construimos autos
+		    Auto audi01 = new Auto();
+		    
+		    //Seteamos el primer auto
+		    audi01.Patente = "AUD345";
+		    audi01.cantRuedas = 4;
+		    audi01.color = "Negro";
+		    audi01.marca = "Audi";
+		    audi01.modelo = "Adventure";
+		    audi01.tieneAireAcondicionado = true;
+		    audi01.cilindrada = 4.5f;
+		    audi01.precio = 1550000.00;
+		    
+		    System.out.println("La patente de audi01 es: " + audi01.Patente);
+		    System.out.println("La cantidad de ruedas de audi01 es: " + audi01.cantRuedas);
+		    System.out.println("El color de audi01 es: " + audi01.color);
+		    System.out.println("La marca de audi01 es: " + audi01.marca);
+		    System.out.println("El modelo de audi01 es: " + audi01.modelo);
+		    System.out.println("¿audi01 tiene aire acondicionado?: " + audi01.tieneAireAcondicionado);
+		    System.out.println("La cilindrada de audi01 es: " + audi01.cilindrada);
+		    System.out.println("El precio de audi01 es: " + audi01.precio);
+	
+		    
+	}
+
+   
+    
+    
+}
+		
+
